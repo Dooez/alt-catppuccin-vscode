@@ -103,6 +103,15 @@ Open your settings, and look for `Extensions > Catppuccin`. Available options ar
 
 You can choose any color as your "accent" color. `mauve` is our default, but you can add more personality by using your favorite!
 
+### Syntax highlight mode
+
+`catppuccin.syntaxMode`
+
+You can choose syntax highlighting mode
+
+- `default`: default highlighting mode
+- `monokai`: monokai style highliting mode with catppucinn palette
+
 ### Disable italics & bold fonts
 
 You can toggle whether to use

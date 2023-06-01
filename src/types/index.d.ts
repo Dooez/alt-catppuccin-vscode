@@ -14,6 +14,7 @@ export type CatppuccinAccent =
   | "sapphire"
   | "blue"
   | "lavender";
+export type CatppuccinSyntaxMode = "default" | "monokai";
 export type CatppuccinWorkbenchMode = "default" | "flat";
 export type CatppuccinBracketMode =
   | "rainbow"
@@ -73,6 +74,7 @@ export type ThemeOptions = {
   italicKeywords: boolean;
   boldKeywords: boolean;
   colorOverrides: ColorOverrides;
+  syntaxMode: CatppuccinSyntaxMode
   workbenchMode: CatppuccinWorkbenchMode;
   bracketMode: CatppuccinBracketMode;
   extraBordersEnabled: boolean;

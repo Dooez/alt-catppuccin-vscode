@@ -9,6 +9,7 @@ import {
   CustomUIColors,
   ThemeOptions,
   ThemePaths,
+  CatppuccinSyntaxMode,
   CatppuccinWorkbenchMode,
   CatppuccinBracketMode,
 } from "./types";
@@ -59,6 +60,7 @@ class Utils {
     const conf = workspace.getConfiguration("catppuccin");
     return {
       accent: conf.get<CatppuccinAccent>("accentColor"),
+      syntaxMode: conf.get<CatppuccinSyntaxMode>("syntaxMode"),
       boldKeywords: conf.get<boolean>("boldKeywords"),
       italicKeywords: conf.get<boolean>("italicKeywords"),
       italicComments: conf.get<boolean>("italicComments"),

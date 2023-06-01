@@ -100,6 +100,19 @@
               "lavender"
             ]
           },
+          "catppuccin.syntaxMode": {
+            "type": "string",
+            "default": "default",
+            "description": "Controls how the syntax highlighting should be styled.",
+            "enum": [
+              "default",
+              "monokai"
+            ],
+            "enumDescriptions": [
+              "The default syntax highlighting.",
+              "Sytax highlighting based on Monokai theme using Catppuccin palette."
+            ]
+          },
           "catppuccin.workbenchMode": {
             "type": "string",
             "default": "default",
@@ -213,5 +226,8 @@
     "lint": "eslint . --ext .ts",
     "prepare": "husky install",
     "package": "vsce package --allow-star-activation --yarn"
+  },
+  "dependencies": {
+    "yarn": "^1.22.19"
   }
 }
