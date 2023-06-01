@@ -22,7 +22,7 @@ export enum UpdateTrigger {
 
 class Utils {
   private promptToReload(trigger: UpdateTrigger) {
-    const msg = `Catppuccin: ${trigger} - Reload required.`;
+    const msg = `Catppuccin Monokai: ${trigger} - Reload required.`;
     const action = "Reload window";
     window.showInformationMessage(msg, action).then((selectedAction) => {
       if (selectedAction === action) {
@@ -38,25 +38,25 @@ class Utils {
     });
   }
   isFreshInstall(): boolean {
-    console.log("Checking if catppuccin is installed for the first time.");
+    console.log("Checking if Catppuccin Monokai is installed for the first time.");
     const flagPath = join(__dirname, "..", "themes", ".flag");
     if (fs.existsSync(flagPath)) {
-      console.log("Catppuccin is installed for the first time!");
+      console.log("Catppuccin Monokai is installed for the first time!");
       return false;
     } else {
-      console.log("Catppuccin has been installed before.");
+      console.log("Catppuccin Monokai has been installed before.");
       fs.writeFileSync(flagPath, "");
       return true;
     }
   }
   isDefaultConfig(): boolean {
-    console.log("Checking if catppuccin is using default config.");
+    console.log("Checking if Catppuccin Monokai is using default config.");
     const state = this.getConfiguration() === defaultOptions;
-    console.log(`Catppuccin is using ${state ? "default" : "custom"} config.`);
+    console.log(`Catppuccin Monokai is using ${state ? "default" : "custom"} config.`);
     return state;
   }
   getConfiguration = (): ThemeOptions => {
-    const conf = workspace.getConfiguration("catppuccin");
+    const conf = workspace.getConfiguration("catppuccin-monokai");
     return {
       accent: conf.get<CatppuccinAccent>("accentColor"),
       boldKeywords: conf.get<boolean>("boldKeywords"),

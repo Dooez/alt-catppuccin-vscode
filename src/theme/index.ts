@@ -46,7 +46,7 @@ export const compileTheme = (
     isLatte: flavour === "latte",
   };
 
-  const flavourName = `Catppuccin ${capitalize(flavour)}`;
+  const flavourName = `Catppuccin Monokai ${capitalize(flavour)}`;
 
   const theme = {
     name: flavourName,
@@ -54,13 +54,13 @@ export const compileTheme = (
     semanticHighlighting: true,
     semanticTokenColors: {
       enumMember: {
-        foreground: palette.sky,
+        foreground: palette.mauve,
       },
-      "variable.constant": {
-        foreground: palette.yellow,
+      namespace: {
+        foreground: palette.text,
       },
-      "variable.defaultLibrary": {
-        foreground: palette.peach,
+      concept: {
+        foreground: palette.rosewater,
       },
     },
     tokenColors: getTokenColors(context),

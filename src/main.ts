@@ -24,10 +24,10 @@ export const activate = () => {
         .getConfiguration("workbench")
         .get<string>("colorTheme");
       const ctp_themes = {
-        "Catppuccin Latte": "catppuccin-latte",
-        "Catppuccin Frappé": "catppuccin-frappe",
-        "Catppuccin Macchiato": "catppuccin-macchiato",
-        "Catppuccin Mocha": "catppuccin-mocha",
+        "Catppuccin Monokai Latte": "catppuccin-monokai-latte",
+        "Catppuccin Monokai Frappé": "catppuccin-monokai-frappe",
+        "Catppuccin Monokai Macchiato": "catppuccin-monokai-macchiato",
+        "Catppuccin Monokai Mocha": "catppuccin-monokai-mocha",
       };
       if (Object.keys(ctp_themes).includes(theme)) {
         workspace
@@ -35,7 +35,7 @@ export const activate = () => {
           .update("iconTheme", ctp_themes[theme], true);
       }
     }
-    if (event.affectsConfiguration("catppuccin")) {
+    if (event.affectsConfiguration("catppuccin-monokai")) {
       utils.updateThemes(
         utils.getConfiguration(),
         paths,

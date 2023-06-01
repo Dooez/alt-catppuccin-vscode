@@ -1,8 +1,8 @@
 {
-  "name": "catppuccin-vsc",
-  "displayName": "Catppuccin for VSCode",
-  "publisher": "Catppuccin",
-  "description": "🦌 Soothing pastel theme for VSCode",
+  "name": "catppuccin-monokai-vsc",
+  "displayName": "Catppuccin Monokai for VSCode",
+  "publisher": "dooez",
+  "description": "Catppuccin theme with Monokai syntax highligting",
   "version": "2.7.0",
   "engines": {
     "vscode": "^1.70.0",
@@ -29,57 +29,57 @@
   "contributes": {
     "themes": [
       {
-        "label": "Catppuccin Mocha",
+        "label": "Catppuccin Monokai Mocha",
         "uiTheme": "vs-dark",
         "path": "./themes/mocha.json"
       },
       {
-        "label": "Catppuccin Macchiato",
+        "label": "Catppuccin Monokai Macchiato",
         "uiTheme": "vs-dark",
         "path": "./themes/macchiato.json"
       },
       {
-        "label": "Catppuccin Frappé",
+        "label": "Catppuccin Monokai Frappé",
         "uiTheme": "vs-dark",
         "path": "./themes/frappe.json"
       },
       {
-        "label": "Catppuccin Latte",
+        "label": "Catppuccin Monokai Latte",
         "uiTheme": "vs",
         "path": "./themes/latte.json"
       }
     ],
     "configuration": [
       {
-        "title": "Catppuccin",
+        "title": "Catppuccin Monokai",
         "properties": {
-          "catppuccin.boldKeywords": {
+          "catppuccin-monokai.boldKeywords": {
             "type": "boolean",
             "default": true,
             "markdownDescription": "Controls whether to use **bold** for keywords."
           },
-          "catppuccin.italicKeywords": {
+          "catppuccin-monokai.italicKeywords": {
             "type": "boolean",
             "default": true,
             "markdownDescription": "Controls whether to use *italics* for keywords."
           },
-          "catppuccin.italicComments": {
+          "catppuccin-monokai.italicComments": {
             "type": "boolean",
             "default": true,
             "markdownDescription": "Controls whether to use *italics* for comments."
           },
-          "catppuccin.colorOverrides": {
+          "catppuccin-monokai.colorOverrides": {
             "type": "object",
             "default": {},
             "markdownDescription": "Custom color overrides. Assign your own hex codes to palette colors. See [the docs](https://github.com/catppuccin/vscode#override-palette-colors) for reference.",
             "$ref": "https://raw.githubusercontent.com/catppuccin/vscode/main/schemas/colorOverrides.schema.json"
           },
-          "catppuccin.customUIColors": {
+          "catppuccin-monokai.customUIColors": {
             "type": "object",
             "default": {},
             "markdownDescription": "Customize UI colors. Map `workbench.colorCustomizations` to palette colors. See [the docs](https://github.com/catppuccin/vscode#use-palette-colors-on-workbench-elements-ui) for reference."
           },
-          "catppuccin.accentColor": {
+          "catppuccin-monokai.accentColor": {
             "type": "string",
             "default": "mauve",
             "description": "Controls which accent color to use.",
@@ -100,7 +100,7 @@
               "lavender"
             ]
           },
-          "catppuccin.workbenchMode": {
+          "catppuccin-monokai.workbenchMode": {
             "type": "string",
             "default": "default",
             "description": "Controls how the workbench should be styled.",
@@ -113,7 +113,7 @@
               "A more flat look, using 2 shades of the base color."
             ]
           },
-          "catppuccin.bracketMode": {
+          "catppuccin-monokai.bracketMode": {
             "type": "string",
             "default": "rainbow",
             "description": "Controls how bracket pairs should be themed",
@@ -130,7 +130,7 @@
               "Uses the same bracket pair colors as our neovim port."
             ]
           },
-          "catppuccin.extraBordersEnabled": {
+          "catppuccin-monokai.extraBordersEnabled": {
             "type": "boolean",
             "default": false,
             "description": "Controls whether borders should be enabled on some additional UI elements."
@@ -141,22 +141,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/catppuccin/vscode.git"
+    "url": "https://github.com/Dooez/catppuccin-monokai-vscode.git"
   },
   "bugs": {
-    "url": "https://github.com/catppuccin/vscode/issues"
-  },
-  "sponsor": {
-    "url": "https://opencollective.com/catppuccin"
+    "url": "https://github.com/Dooez/catppuccin-monokai-vscode/issues"
   },
   "icon": "icon.png",
   "license": "MIT",
-  "__metadata": {
-    "publisherDisplayName": "Catppuccin",
-    "publisherId": "e7d2ed61-53e0-4dd4-afbe-f536c3bb4316",
-    "id": "69264e4d-cd3b-468a-8f2b-e69673c7d864",
-    "isPreReleaseVersion": false
-  },
   "devDependencies": {
     "@catppuccin/palette": "^0.1.8",
     "@types/node": "^16.0.0",
@@ -213,5 +204,8 @@
     "lint": "eslint . --ext .ts",
     "prepare": "husky install",
     "package": "vsce package --allow-star-activation --yarn"
+  },
+  "dependencies": {
+    "yarn": "^1.22.19"
   }
 }

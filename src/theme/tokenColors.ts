@@ -57,7 +57,7 @@ export const getTokenColors = (context: ThemeContext) => {
         "meta.brace"
       ],
       settings: {
-        foreground: palette.subtext1
+        foreground: palette.text
       }
     },
     {
@@ -143,7 +143,7 @@ export const getTokenColors = (context: ThemeContext) => {
         "variable.readwrite.other.block"
       ],
       settings: {
-        foreground: palette.subtext1
+        foreground: palette.text
       }
     },
     {
@@ -154,7 +154,7 @@ export const getTokenColors = (context: ThemeContext) => {
         "variable.other.block"
       ],
       settings: {
-        foreground: palette.subtext1
+        foreground: palette.text
       }
     },
     {
@@ -200,7 +200,7 @@ export const getTokenColors = (context: ThemeContext) => {
       name: "Function call",
       scope: "entity.name.function-call",
       settings: {
-        foreground: palette.subtext1
+        foreground: palette.text
       }
     },
     {
@@ -273,7 +273,7 @@ export const getTokenColors = (context: ThemeContext) => {
         "support.type.property-name.sass"
       ],
       settings: {
-        foreground: palette.subtext1
+        foreground: palette.text
       }
     },
     {
