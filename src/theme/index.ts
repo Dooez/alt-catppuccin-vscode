@@ -5,8 +5,8 @@ import {
   ThemeContext,
   ThemeOptions,
 } from "../types";
-import { getSemanticColors } from "./semanticColors";
-import { getTokenColors } from "./tokenColors";
+import { getSemanticColors } from "./semanticColorsCommon";
+import { getTokenColors } from "./tokenColorsCommon";
 import { getUiColors } from "./uiColors";
 import { capitalize } from "./utils";
 
