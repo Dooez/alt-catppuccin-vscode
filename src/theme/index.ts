@@ -5,6 +5,7 @@ import {
   ThemeContext,
   ThemeOptions,
 } from "../types";
+import { getSemanticColors } from "./semanticColors";
 import { getTokenColors } from "./tokenColors";
 import { getUiColors } from "./uiColors";
 import { capitalize } from "./utils";
@@ -15,6 +16,7 @@ export const defaultOptions: ThemeOptions = {
   italicComments: true,
   italicKeywords: true,
   colorOverrides: {},
+  syntaxMode: "default",
   workbenchMode: "default",
   bracketMode: "rainbow",
   extraBordersEnabled: false,
@@ -52,17 +54,7 @@ export const compileTheme = (
     name: flavourName,
     type: context.isLatte ? "light" : "dark",
     semanticHighlighting: true,
-    semanticTokenColors: {
-      enumMember: {
-        foreground: palette.mauve,
-      },
-      namespace: {
-        foreground: palette.text,
-      },
-      concept: {
-        foreground: palette.rosewater,
-      },
-    },
+    semanticTokenColors: getSemanticColors(context),
     tokenColors: getTokenColors(context),
     colors: getUiColors(context),
   };
