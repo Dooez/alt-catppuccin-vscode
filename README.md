@@ -6,7 +6,7 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
-This is a fork of [Catppuccin VSCode](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc) extension with Alternate index highlighting modes using Catppuccine palette. At the moment Monokai, Dark One, Microsoft modes are included.
+This is a fork of [Catppuccin VSCode](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc) extension with Alternate syntax highlighting modes using Catppuccine palette. At the moment Monokai, Dark One, Microsoft modes are included.
 
 ## Previews
 Previews in Monokai mode:

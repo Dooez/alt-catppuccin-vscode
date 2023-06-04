@@ -3,7 +3,7 @@
   "displayName": "Alt Catppuccin for VSCode",
   "publisher": "dooez",
   "description": "Catppuccin with Monokai, Dark One and more syntax styles",
-  "version": "2.7.2",
+  "version": "2.7.4",
   "engines": {
     "vscode": "^1.70.0",
     "node": ">=16.0.0 <17.0.0"
