@@ -14,7 +14,7 @@ export type CatppuccinAccent =
   | "sapphire"
   | "blue"
   | "lavender";
-export type CatppuccinSyntaxMode = "default" | "monokai";
+export type CatppuccinSyntaxMode = "default" | "monokai" | "dark-one" | "ms";
 export type CatppuccinWorkbenchMode = "default" | "flat";
 export type CatppuccinBracketMode =
   | "rainbow"

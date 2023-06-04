@@ -6,12 +6,10 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
-This is a fork of [Catppuccin VSCode](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc) extension with Monokai style index highlighting using Catppuccine palette.
-> **Note**\
-> Get the newly released [Catppuccin Icon Pack](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons) now!
+This is a fork of [Catppuccin VSCode](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc) extension with Alternate index highlighting modes using Catppuccine palette. At the moment Monokai, Dark One, Microsoft modes are included.
 
 ## Previews
-
+Previews in Monokai mode:
 <details>
 <summary>🌻 Latte</summary>
 <img src="assets/latte.webp"/>
@@ -30,6 +28,19 @@ This is a fork of [Catppuccin VSCode](https://marketplace.visualstudio.com/items
 </details>
 
 ## Usage
+
+### Syntax highlighting mode
+
+`alt-catppuccin.syntaxMode`
+
+You can change the syntax highlighting mode:
+	- 'default' - default Catppuccin mode
+	- 'monokai' - Monokai based mode
+	- 'dark-one' - Dark One based mode
+	- 'ms' - Microsoft based mode
+
+### Other settings
+
 Check [Catppuccin VSCode](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc) extension for detail on usage. This extension *should* support all the same settings as the original.
 
-<p align="center"><a href="https://github.com/Dooez/catppuccin-monokai-vscode/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a></p>
+<p align="center"><a href="https://github.com/Dooez/alt-catppuccin-vscode/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a></p>

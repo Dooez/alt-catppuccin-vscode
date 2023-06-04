@@ -16,7 +16,7 @@ export const defaultOptions: ThemeOptions = {
   italicComments: true,
   italicKeywords: true,
   colorOverrides: {},
-  syntaxMode: "default",
+  syntaxMode: "monokai",
   workbenchMode: "default",
   bracketMode: "rainbow",
   extraBordersEnabled: false,

@@ -1,9 +1,9 @@
 {
-  "name": "catppuccin-monokai-vsc",
-  "displayName": "Catppuccin Monokai for VSCode",
+  "name": "alt-catppuccin-vsc",
+  "displayName": "Alt Catppuccin for VSCode",
   "publisher": "dooez",
-  "description": "Catppuccin theme with Monokai syntax highligting",
-  "version": "2.7.1",
+  "description": "Catppuccin with Monokai, Dark One and more syntax styles",
+  "version": "2.7.2",
   "engines": {
     "vscode": "^1.70.0",
     "node": ">=16.0.0 <17.0.0"
@@ -29,57 +29,57 @@
   "contributes": {
     "themes": [
       {
-        "label": "Catppuccin Monokai Mocha",
+        "label": "Alt Catppuccin Mocha",
         "uiTheme": "vs-dark",
         "path": "./themes/mocha.json"
       },
       {
-        "label": "Catppuccin Monokai Macchiato",
+        "label": "Alt Catppuccin Macchiato",
         "uiTheme": "vs-dark",
         "path": "./themes/macchiato.json"
       },
       {
-        "label": "Catppuccin Monokai Frappé",
+        "label": "Alt Catppuccin Frappé",
         "uiTheme": "vs-dark",
         "path": "./themes/frappe.json"
       },
       {
-        "label": "Catppuccin Monokai Latte",
+        "label": "Alt Catppuccin Latte",
         "uiTheme": "vs",
         "path": "./themes/latte.json"
       }
     ],
     "configuration": [
       {
-        "title": "Catppuccin Monokai",
+        "title": "Alt Catppuccin",
         "properties": {
-          "catppuccin-monokai.boldKeywords": {
+          "alt-catppuccin.boldKeywords": {
             "type": "boolean",
             "default": true,
             "markdownDescription": "Controls whether to use **bold** for keywords."
           },
-          "catppuccin-monokai.italicKeywords": {
+          "alt-catppuccin.italicKeywords": {
             "type": "boolean",
             "default": true,
             "markdownDescription": "Controls whether to use *italics* for keywords."
           },
-          "catppuccin-monokai.italicComments": {
+          "alt-catppuccin.italicComments": {
             "type": "boolean",
             "default": true,
             "markdownDescription": "Controls whether to use *italics* for comments."
           },
-          "catppuccin-monokai.colorOverrides": {
+          "alt-catppuccin.colorOverrides": {
             "type": "object",
             "default": {},
             "markdownDescription": "Custom color overrides. Assign your own hex codes to palette colors. See [the docs](https://github.com/catppuccin/vscode#override-palette-colors) for reference.",
             "$ref": "https://raw.githubusercontent.com/catppuccin/vscode/main/schemas/colorOverrides.schema.json"
           },
-          "catppuccin-monokai.customUIColors": {
+          "alt-catppuccin.customUIColors": {
             "type": "object",
             "default": {},
             "markdownDescription": "Customize UI colors. Map `workbench.colorCustomizations` to palette colors. See [the docs](https://github.com/catppuccin/vscode#use-palette-colors-on-workbench-elements-ui) for reference."
           },
-          "catppuccin-monokai.accentColor": {
+          "alt-catppuccin.accentColor": {
             "type": "string",
             "default": "mauve",
             "description": "Controls which accent color to use.",
@@ -100,20 +100,24 @@
               "lavender"
             ]
           },
-          "catppuccin-monokai.syntaxMode": {
+          "alt-catppuccin.syntaxMode": {
             "type": "string",
-            "default": "default",
+            "default": "monokai",
             "description": "Controls how the syntax highlighting should be styled.",
             "enum": [
               "default",
-              "monokai"
+              "monokai",
+              "dark-one",
+              "ms"
             ],
             "enumDescriptions": [
-              "The default syntax highlighting.",
-              "Sytax highlighting based on Monokai theme using Catppuccin palette."
+              "The default Catppuccin syntax highlighting.",
+              "Sytax highlighting based on Monokai theme using Catppuccin palette.",
+              "Sytax highlighting based on Dark One theme using Catppuccin palette.",
+              "Sytax highlighting based on Microsoft theme using Catppuccin palette."
             ]
           },
-          "catppuccin-monokai.workbenchMode": {
+          "alt-catppuccin.workbenchMode": {
             "type": "string",
             "default": "default",
             "description": "Controls how the workbench should be styled.",
@@ -126,7 +130,7 @@
               "A more flat look, using 2 shades of the base color."
             ]
           },
-          "catppuccin-monokai.bracketMode": {
+          "alt-catppuccin.bracketMode": {
             "type": "string",
             "default": "rainbow",
             "description": "Controls how bracket pairs should be themed",
@@ -143,7 +147,7 @@
               "Uses the same bracket pair colors as our neovim port."
             ]
           },
-          "catppuccin-monokai.extraBordersEnabled": {
+          "alt-catppuccin.extraBordersEnabled": {
             "type": "boolean",
             "default": false,
             "description": "Controls whether borders should be enabled on some additional UI elements."
@@ -154,10 +158,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dooez/catppuccin-monokai-vscode.git"
+    "url": "https://github.com/Dooez/alt-catppuccin-vscode.git"
   },
   "bugs": {
-    "url": "https://github.com/Dooez/catppuccin-monokai-vscode/issues"
+    "url": "https://github.com/Dooez/alt-catppuccin-vscode/issues"
   },
   "icon": "icon.png",
   "license": "MIT",

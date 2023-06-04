@@ -57,7 +57,7 @@ class Utils {
     return state;
   }
   getConfiguration = (): ThemeOptions => {
-    const conf = workspace.getConfiguration("catppuccin-monokai");
+    const conf = workspace.getConfiguration("alt-catppuccin");
     return {
       accent: conf.get<CatppuccinAccent>("accentColor"),
       syntaxMode: conf.get<CatppuccinSyntaxMode>("syntaxMode"),
