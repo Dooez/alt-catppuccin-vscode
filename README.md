@@ -34,10 +34,11 @@ Previews in Monokai mode:
 `alt-catppuccin.syntaxMode`
 
 You can change the syntax highlighting mode:
-	- 'default' - default Catppuccin mode
-	- 'monokai' - Monokai based mode
-	- 'dark-one' - Dark One based mode
-	- 'ms' - Microsoft based mode
+
+- 'default' - default Catppuccin mode
+- 'monokai' - Monokai based mode
+- 'dark-one' - Dark One based mode
+- 'ms' - Microsoft based mode
 
 ### Other settings
 
